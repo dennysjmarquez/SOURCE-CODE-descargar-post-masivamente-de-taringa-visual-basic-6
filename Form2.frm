@@ -76,7 +76,7 @@ Begin VB.Form Form2
       End
       Begin VB.Label Label3 
          AutoSize        =   -1  'True
-         Caption         =   "ContraseÒa:"
+         Caption         =   "Contrase√±a:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
             Size            =   8.25
@@ -129,7 +129,7 @@ Begin VB.Form Form2
       End
       Begin VB.Label Label2 
          AutoSize        =   -1  'True
-         Caption         =   "ContraseÒa:"
+         Caption         =   "Contrase√±a:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
             Size            =   8.25
@@ -222,7 +222,7 @@ Select Case Check
             If Not TaringaU = "" And Not TaringaPas = "" And Not _
             TaringaU = UsT And Not TaringaPas = PasT Then
                 
-                Respu = MsgBox("Est· seguro va a cambiar la cuenta de Taringa por esta nueva?", vbYesNo)
+                Respu = MsgBox("Est√° seguro va a cambiar la cuenta de Taringa por esta nueva?", vbYesNo)
                 
                 If Respu = 6 Then
                     TaringaU = UsT
@@ -231,7 +231,7 @@ Select Case Check
             
             ElseIf Not TaringaU = UsT Or Not TaringaPas = PasT And Not TaringaU = "" And Not TaringaPas = "" Then
             
-                Respu = MsgBox("Est· seguro va a cambiar la cuenta de Taringa por esta nueva?", vbYesNo)
+                Respu = MsgBox("Est√° seguro va a cambiar la cuenta de Taringa por esta nueva?", vbYesNo)
                 
                 If Respu = 6 Then
                     TaringaU = UsT
@@ -247,7 +247,7 @@ Select Case Check
             If Not PoringaU = "" And Not PoringaPas = "" And Not _
             PoringaU = UsP And Not PoringaPas = PasP Then
                 
-                Respu = MsgBox("Est· seguro va a cambiar la cuenta de Poringa por esta nueva?", vbYesNo)
+                Respu = MsgBox("Est√° seguro va a cambiar la cuenta de Poringa por esta nueva?", vbYesNo)
                 
                 If Respu = 6 Then
                     PoringaU = UsP
@@ -273,8 +273,8 @@ End Sub
 
 Private Sub Form_Load()
 
-    TaringaU = "escorpiconj"
-    TaringaPas = "14m297522"
+   TaringaU = "UsuarioTaringa"
+   TaringaPas = "Pass"
 
 
     UsT = TaringaU
